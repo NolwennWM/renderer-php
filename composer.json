@@ -1,0 +1,22 @@
+{
+  "name": "nwm/renderer-php",
+  "description": "Une petite librairie PHP qui fournit un moteur de rendu simple.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+        {
+            "name": "Nolwenn WEBER-MARQUISET"
+        }
+    ],
+    
+    "require": {
+        "php": ">=8.4"
+    },
+  "autoload": {
+    "psr-4": {
+      "NWM\\Renderer\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
