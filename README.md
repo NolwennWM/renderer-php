@@ -1,2 +1,3 @@
-# renderer-php
-Petit moteur de rendu simple
+# Renderer PHP
+
+Little renderer engine to use on my personnal projects.
