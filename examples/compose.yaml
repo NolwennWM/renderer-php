@@ -6,4 +6,4 @@ services:
     ports:
       - "8013:80"
     environment:
-      - ROOT_PATH=/exemples
+      - ROOT_PATH=/examples
