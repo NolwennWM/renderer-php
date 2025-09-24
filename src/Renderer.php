@@ -247,5 +247,21 @@ class Renderer
     {
         $this->default_title = $default_title;
     }
+    /**
+     * Generate a preview of the given HTML content by stripping tags and limiting length.
+     *
+     * @param string $html the HTML content
+     * @param int $limit the maximum length of the preview
+     * @return string the generated preview
+     */
+    public function previewContent(string $html, int $limit = 150): string
+    {
+        $text = strip_tags($html);
+        $text = trim(preg_replace('/\s+/', ' ', $text));
+        if (mb_strlen($text) > $limit) {
+            $text = mb_substr($text, 0, $limit) . '...';
+        }
+        return $text;
+    }
     
 }
